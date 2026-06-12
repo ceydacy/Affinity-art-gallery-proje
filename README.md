@@ -1,3 +1,4 @@
+Bu proje geliştirilme aşamasındadır.
 # 🎨 Affinity Art Gallery — Sanat Galerisi ve Başyapıtlar Koleksiyonu
 
 Affinity Art Gallery, dünya sanat tarihine yön vermiş en seçkin orijinal başyapıtları dijital ortamda estetik bir vizyonla sergileyen, dinamik asenkron yapısıyla modern bir "Sanat Mağazası" ve "CRUD Ödev Alanı Yönetimi" barındıran kapsamlı bir web yazılım projesidir.
