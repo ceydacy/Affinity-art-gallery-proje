@@ -57,3 +57,6 @@ Projenin en dinamik kısmı olan "Modern Sanat Mağazası" alanı, harici bir RE
 │                          bellek.jpg, dalga.jpg, davut.jpg, düşünenadam.jpg, 
 │                          gecedevriyesi.jpg, monalisa.jpg, öpücük.jpg, 
 │                          sonakşamyemeği.jpg, venüsündoğuşu.jpg vb.)
+
+## Proje Sahibi
+*   **[Ceyda Çay]**
