@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Affinity Art Gallery | Başyapıtlar Koleksiyonu</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;0,600;1,300&family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Affinity Art Gallery</a>
+        <button
+          class="custom-toggler d-lg-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#galleryNav"
+          aria-controls="galleryNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="galleryNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#exhibitions">Sergiler</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#collection">Koleksiyon</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#api-management-section"
+                >Sanat Mağazası</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#visit">Bilet & Ziyaret</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="exhibitions" class="py-5 my-0">
+      <div class="container">
+        <div class="section-title-area text-center">
+          <span class="title-tagline">Carefully Curated</span>
+          <h2 class="display-4 serif-font main-title">Güncel Sergiler</h2>
+          <div class="title-divider"></div>
+        </div>
+
+        <div
+          class="row exhibition-row align-items-center justify-content-between"
+        >
+          <div class="col-lg-5 col-md-6 pe-lg-5">
+            <div class="exhibition-meta">
+              <span class="exhibition-badge">Yeni Sergi</span>
+              <h3 class="exhibition-date">26.11.2026</h3>
+            </div>
+            <h4 class="exhibition-hall">
+              📍 Salon A — Klasik Dönem Portreleri
+            </h4>
+            <p class="exhibition-desc">
+              İnsan ifadesinin tarih boyunca geçirdiği dönüşümü, monokrom
+              tonlar, yağlıboya dokuları ve gölge-ışık oyunlarıyla ele alan
+              zamansız bir retrospektif.
+            </p>
+            <div class="pt-2">
+              <a href="#visit" class="btn-modern-ticket">
+                <span>Ziyaret Planla</span>
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 mt-5 mt-md-0">
+            <div class="artwork-frame-wrapper">
+              <div class="artwork-shadow-bg"></div>
+              <img
+                src="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?q=80&w=1200"
+                class="exhibition-premium-img"
+                alt="Sergi Detay"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="collection" class="collection-section">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-5 serif-font">Dünyaca Ünlü 16 Başyapıt</h2>
+          <p class="text-muted text-uppercase tracking-wider small">
+            Sanat Tarihine Yön Veren Eserler
+          </p>
+
+          <div
+            class="filter-menu-container mt-4 d-flex justify-content-center flex-wrap gap-2"
+          >
+            <button class="btn filter-btn active" data-filter="all">
+              Tümü (16)
+            </button>
+            <button class="btn filter-btn" data-filter="painting">Resim</button>
+            <button class="btn filter-btn" data-filter="sculpture">
+              Heykel
+            </button>
+            <button class="btn filter-btn" data-filter="classic">
+              Rönesans & Klasik
+            </button>
+            <button class="btn filter-btn" data-filter="modern">
+              Modern & Soyut
+            </button>
+          </div>
+        </div>
+
+        <div class="row art-grid">
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 art-item"
+            data-category="painting classic"
+          >
+            <div class="card art-card">
+              <div class="art-img-wrapper">
+                <img src="monalisa.jpg" alt="Mona Lisa" />
+              </div>
+              <span class="art-badge">Klasik</span>
+              <h3 class="art-title">Mona Lisa</h3>
+              <p class="art-artist">Leonardo da Vinci</p>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 art-item"
+            data-category="painting modern"
+          >
+            <div class="card art-card">
+              <div class="art-img-wrapper">
+                <img src="yıldızlıgece.jpg" alt="Yıldızlı Gece" />
+              </div>
+              <span class="art-badge">Modern</span>
+              <h3 class="art-title">Yıldızlı Gece</h3>
+              <p class="art-artist">Vincent van Gogh</p>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 art-item"
+            data-category="painting classic"
+          >
+            <div class="card art-card">
+              <div class="art-img-wrapper">
+                <img src="inciküpelikiz.jpg" alt="İnci Küpeli Kız" />
+              </div>
+              <span class="art-badge">Klasik</span>
+              <h3 class="art-title">İnci Küpeli Kız</h3>
+              <p class="art-artist">Johannes Vermeer</p>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 art-item"
+            data-category="painting modern"
+          >
+            <div class="card art-card">
+              <div class="art-img-wrapper">
+                <img src="çığlık.jpg" alt="Çığlık" />
+              </div>
+              <span class="art-badge">Modern</span>
+              <h3 class="art-title">Çığlık</h3>
+              <p class="art-artist">Edvard Munch</p>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 art-item"
+            data-category="sculpture modern"
+          >
+            <div class="card art-card">
+              <div class="art-img-wrapper">
+                <img src="düşünenadam.jpg" alt="Düşünen Adam" />
+              </div>
+              <span class="art-badge">Heykel</span>
+              <h3 class="art-title">Düşünen Adam</h3>
+              <p class="art-artist">Auguste Rodin</p>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 art-item"
+            data-category="painting classic"
+          >
+            <div class="card art-card">
+              <div class="art-img-wrapper">
+                <img src="venüsündoğuşu.jpg" alt="Venüs'ün Doğuşu" />
+              </div>
+              <span class="art-badge">Klasik</span>
+              <h3 class="art-title">Venüs'ün Doğuşu</h3>
+              <p class="art-artist">Sandro Botticelli</p>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 art-item"
+            data-category="painting classic"
+          >
+            <div class="card art-card">
+              <div class="art-img-wrapper">
+                <img src="sonakşamyemeği.jpg" alt="Son Akşam Yemeği" />
+              </div>
+              <span class="art-badge">Klasik</span>
+              <h3 class="art-title">Son Akşam Yemeği</h3>
+              <p class="art-artist">Leonardo da Vinci</p>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 art-item"
+            data-category="painting modern"
+          >
+            <div class="card art-card">
+              <div class="art-img-wrapper">
+                <img src="guernica.jpg" alt="Guernica" />
+              </div>
+              <span class="art-badge">Modern</span>
+              <h3 class="art-title">Guernica</h3>
+              <p class="art-artist">Pablo Picasso</p>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 art-item"
+            data-category="painting modern"
+          >
+            <div class="card art-card">
+              <div class="art-img-wrapper">
+                <img src="öpücük.jpg" alt="Öpücük" />
+              </div>
+              <span class="art-badge">Modern</span>
+              <h3 class="art-title">Öpücük</h3>
+              <p class="art-artist">Gustav Klimt</p>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 art-item"
+            data-category="sculpture classic"
+          >
+            <div class="card art-card">
+              <div class="art-img-wrapper">
+                <img src="davut.jpg" alt="Davut" />
+              </div>
+              <span class="art-badge">Heykel</span>
+              <h3 class="art-title">Davut Heykeli</h3>
+              <p class="art-artist">Michelangelo</p>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 art-item"
+            data-category="painting classic"
+          >
+            <div class="card art-card">
+              <div class="art-img-wrapper">
+                <img src="atinaokulu.jpg" alt="Atina Okulu" />
+              </div>
+              <span class="art-badge">Klasik</span>
+              <h3 class="art-title">Atina Okulu</h3>
+              <p class="art-artist">Raffaello Sanzio</p>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 art-item"
+            data-category="painting classic"
+          >
+            <div class="card art-card">
+              <div class="art-img-wrapper">
+                <img src="ademinyaradılışı.jpg" alt="Adem'in Yaratılışı" />
+              </div>
+              <span class="art-badge">Klasik</span>
+              <h3 class="art-title">Adem'in Yaratılışı</h3>
+              <p class="art-artist">Michelangelo</p>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 art-item"
+            data-category="sculpture classic"
+          >
+            <div class="card art-card">
+              <div class="art-img-wrapper">
+                <img src="milo.jpg" alt="Milo Venüsü" />
+              </div>
+              <span class="art-badge">Heykel</span>
+              <h3 class="art-title">Milo Venüsü</h3>
+              <p class="art-artist">Antakyalı Alexandros</p>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 art-item"
+            data-category="painting classic"
+          >
+            <div class="card art-card">
+              <div class="art-img-wrapper">
+                <img src="dalga.jpg" alt="Büyük Dalga" />
+              </div>
+              <span class="art-badge">Klasik</span>
+              <h3 class="art-title">Kanagawa Büyük Dalga</h3>
+              <p class="art-artist">Katsushika Hokusai</p>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 art-item"
+            data-category="painting modern"
+          >
+            <div class="card art-card">
+              <div class="art-img-wrapper">
+                <img src="bellek.jpg" alt="Belleğin Azmi" />
+              </div>
+              <span class="art-badge">Modern</span>
+              <h3 class="art-title">Belleğin Azmi</h3>
+              <p class="art-artist">Salvador Dalí</p>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 art-item"
+            data-category="painting classic"
+          >
+            <div class="card art-card">
+              <div class="art-img-wrapper">
+                <img src="gecedevriyesi.jpg" alt="Gece Devriyesi" />
+              </div>
+              <span class="art-badge">Klasik</span>
+              <h3 class="art-title">Gece Devriyesi</h3>
+              <p class="art-artist">Rembrandt</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="api-management-section"
+      class="py-5"
+      style="border-top: 1px solid var(--border-color)"
+    >
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="title-tagline" style="color: var(--text-dark)"
+            >Dynamic API Integration</span
+          >
+          <h2 class="display-5 serif-font">Modern Sanat Mağazası</h2>
+          <div
+            class="title-divider"
+            style="background-color: var(--text-dark)"
+          ></div>
+          <p class="text-muted small text-uppercase tracking-wider mt-2">
+            Bu bölümdeki veriler Canlı API'den çekilmektedir
+            (Ekleme/Silme/Güncelleme Alanı)
+          </p>
+
+          <div class="row justify-content-center mt-4">
+            <div class="col-md-5">
+              <input
+                type="text"
+                id="apiSearchInput"
+                class="form-control rounded-0 form-dash-input text-center"
+                placeholder="API Ürünlerinde Ara..."
+              />
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="apiLoadingSpinner"
+          class="text-center my-5"
+          style="display: none"
+        >
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden">Yükleniyor...</span>
+          </div>
+        </div>
+
+        <div class="row" id="apiDataContainer"></div>
+
+        <div
+          class="row justify-content-between align-items-center mt-5 pt-5 border-top border-secondary border-opacity-10"
+        >
+          <div class="col-lg-5 col-md-6">
+            <div class="art-form-container py-3">
+              <h3 class="serif-font mb-4 fs-3 tracking-wide" id="crudFormTitle">
+                🎨 Galeri Koleksiyonuna Ekle
+              </h3>
+
+              <form id="apiProductForm" class="modern-api-form">
+                <input type="hidden" id="apiProductId" />
+
+                <div class="mb-4 position-relative">
+                  <input
+                    type="text"
+                    id="apiProductTitle"
+                    class="art-minimal-input"
+                    placeholder=" "
+                    required
+                  />
+                  <label class="art-minimal-label">Eser / Ürün Adı</label>
+                </div>
+
+                <div class="mb-4 position-relative">
+                  <input
+                    type="number"
+                    id="apiProductPrice"
+                    class="art-minimal-input"
+                    placeholder=" "
+                    required
+                  />
+                  <label class="art-minimal-label">Fiyat ($)</label>
+                </div>
+
+                <div class="mb-4 position-relative">
+                  <input
+                    type="url"
+                    id="apiProductImage"
+                    class="art-minimal-input"
+                    placeholder=" "
+                    value="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?q=80&w=400"
+                    required
+                  />
+                  <label class="art-minimal-label">Görsel URL</label>
+                </div>
+
+                <button
+                  type="submit"
+                  id="apiSubmitBtn"
+                  class="btn-modern-ticket border-dark text-dark mt-3 w-100 justify-content-center"
+                >
+                  <span id="btnText">Eseri Galeriye Kaydet</span>
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-6 col-md-6 mt-5 mt-md-0 d-flex justify-content-center"
+          >
+            <div
+              class="artwork-frame-wrapper mini-preview-wrapper"
+              style="max-width: 380px"
+            >
+              <div class="artwork-shadow-bg"></div>
+              <img
+                id="formImagePreview"
+                src="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?q=80&w=400"
+                class="exhibition-premium-img"
+                style="height: 380px; border: 8px solid #1c1916"
+                alt="Eser Önizleme"
+              />
+              <div class="preview-badge">Canlı Önizleme</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ziyaret Bölümü -->
+    <section class="visit-section py-5">
+      <div class="container">
+        <div class="row align-items-center g-0">
+          <!-- Sol Görsel -->
+          <div class="col-lg-5">
+            <div class="visit-image">
+              <img src="terazi.jpg" alt="Sanat Galerisi" class="img-fluid" />
+            </div>
+          </div>
+
+          <!-- Sağ İçerik -->
+          <div class="col-lg-7">
+            <div class="visit-content">
+              <span class="visit-subtitle"> Affinity Art Gallery </span>
+
+              <h2 class="visit-title">
+                SANAT YOLCULUĞUNUZA <br />
+                <span>BAŞLAYIN</span>
+              </h2>
+
+              <p class="visit-text">
+                Geçmişten günümüze uzanan eşsiz eserleri keşfetmek için ziyaret
+                tarihinizi seçin ve sanatın büyüleyici dünyasına adım atın.
+              </p>
+
+              <div class="visit-features">
+                <div class="feature-box">
+                  <i class="bi bi-ticket-perforated"></i>
+                  Ücretsiz Giriş
+                </div>
+
+                <div class="feature-box">
+                  <i class="bi bi-clock"></i>
+                  10:00 - 19:00
+                </div>
+
+                <div class="feature-box">
+                  <i class="bi bi-bank"></i>
+                  Premium Sergiler
+                </div>
+              </div>
+
+              <form class="visit-form">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <input type="date" class="form-control" />
+                  </div>
+
+                  <div class="col-md-6">
+                    <select class="form-select">
+                      <option>1 Kişi</option>
+                      <option>2 Kişi</option>
+                      <option>3 Kişi</option>
+                      <option>4 Kişi</option>
+                    </select>
+                  </div>
+                </div>
+
+                <button class="btn visit-btn mt-4">
+                  ZİYARET BİLETİ OLUŞTUR
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-5">
+      <div class="container text-center">
+        <p class="serif-font mb-2 fs-4 tracking-wider">AFFINITY ART</p>
+        <p class="small text-muted mb-3">
+          Ziyaret Saatleri: Her gün 10:00 - 19:00 | Sergi Girişleri Ücretsizdir
+        </p>
+        <hr class="w-25 mx-auto bg-secondary" />
+        <p class="small text-muted mb-0 mt-3">
+          2026 Affinity Art Gallery. Tüm hakları saklıdır.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
